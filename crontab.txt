@@ -1,0 +1,11 @@
+# Spider Crontab Configuration
+# 格式: 分 时 日 月 周 用户 命令
+
+# 商务部爬虫 - 每11分钟运行一次
+*/11 * * * * root cd /app && /usr/local/bin/python /app/src/mofcom/scraper.py >> /app/logs/mofcom.log 2>&1
+
+# Twitter完整流水线 - 每10分钟运行一次（合并版）
+*/10 * * * * root cd /app && /usr/local/bin/python /app/src/twitter/twitter_pipeline.py >> /app/logs/twitter_pipeline.log 2>&1
+
+# 数据库备份 - 每天凌晨2点运行（保留最新3个备份）
+0 2 * * * root cd /app && /usr/local/bin/python /app/scripts/backup_databases.py >> /app/logs/backup.log 2>&1

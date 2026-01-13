@@ -1,0 +1,74 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.dylib
+*.egg-info/
+*.egg
+pip-wheel-metadata/
+build/
+dist/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+.envrc
+
+# Virtual environments
+.venv/
+venv/
+
+# IDE
+.DS_Store
+.idea/
+.vscode/
+
+# Testing
+playwright-report/
+test-results/
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Logs
+*.log
+logs/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+*.db-shm
+*.db-wal
+
+# Database backups
+data/backups/
+
+# Screenshots and images
+screenshots/
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+
+# Sensitive configuration files
+twitter_cookies.json
+ai_config.json
+config/*.json
+!config/*.json.example
+config/secrets.json
+
+# OSS and credentials
+*_credentials.json
+*_secret.json
+*.key
+*.pem
+
+# Data directories
+data/
+temp/
+tmp/
