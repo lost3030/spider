@@ -26,6 +26,13 @@ venv/
 .idea/
 .vscode/
 
+# Git backups and temporary files
+.git.backup/
+.git.bak/
+*.backup
+*.bak
+*.tmp
+
 # Testing
 playwright-report/
 test-results/
